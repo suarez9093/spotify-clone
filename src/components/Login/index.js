@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import { loginUrl } from './spotify';
 function Login() {
   return (
     <div className='login'>
@@ -7,7 +8,7 @@ function Login() {
         src='https://logos-world.net/wp-content/uploads/2020/09/Spotify-Logo.png'
         alt='spotify logo'
       />
-      <a>LOGIN WITH SPOTIFY</a>
+      <a href={loginUrl}>LOGIN WITH SPOTIFY</a>
     </div>
   );
 }
