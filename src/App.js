@@ -9,7 +9,7 @@ import { getTokenFromURL } from './spotify';
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const { token, setToken, setUser, user } = useContext(context);
+  const { token, setToken, setUser, user, setPlaylists } = useContext(context);
   useEffect(() => {
     const hash = getTokenFromURL();
 
@@ -18,6 +18,8 @@ function App() {
       setToken(hash.access_token);
       spotify.setAccessToken(hash.access_token);
       spotify.getMe().then((res) => setUser(res));
+
+      spotify.getUserPlaylists().then((playlists) => setPlaylists(playlists));
     }
   }, []);
   console.log(user);
