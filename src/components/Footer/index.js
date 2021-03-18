@@ -12,7 +12,11 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='footer__left'>
-        <p>Albumn and song details</p>
+        <img src='' alt='' className='footer__albumLogo' />
+        <div className='footer__songInfo'>
+          <h4>No song is playing</h4>
+          <p>...</p>
+        </div>
       </div>
       <div className='footer__center'>
         <ShuffleIcon className='footer__green' />
