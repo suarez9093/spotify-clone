@@ -7,6 +7,7 @@ import './Sidebar.css';
 import SidebarOption from './SidebarOption';
 function Sidebar() {
   const { setPlaylists, playlists } = useContext(context);
+  console.log('playlists', playlists);
   return (
     <div className='sidebar'>
       <img

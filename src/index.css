@@ -1,8 +1,13 @@
 * {
   margin: 0;
 }
+
+/* allows you to still scroll but not have a scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
 :root {
-  --shopGreen: #1db954;
+  --spotifyGreen: #1db954;
 }
 body {
   margin: 0;
