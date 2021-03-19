@@ -5,7 +5,6 @@ import { context } from '../../context/index';
 import './Header.css';
 function Header() {
   const { user } = useContext(context);
-  console.log('user', user);
   return (
     <header className='header'>
       <div className='header__left'>
@@ -18,7 +17,7 @@ function Header() {
       <div className='header__right'>
         <Avatar
           src={user ? user.images[0].url : null}
-          alt={user.display_name}
+          alt={user ? user.display_name : null}
         />
         <h4>{user ? user.display_name : 'User'}</h4>
       </div>

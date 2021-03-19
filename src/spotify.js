@@ -19,7 +19,6 @@ export const getTokenFromURL = () => {
     .reduce((initial, item) => {
       let parts = item.split('=');
       initial[parts[0]] = decodeURIComponent(parts[1]); // decodes a URI
-      console.log(initial);
       return initial;
     }, {});
 };
