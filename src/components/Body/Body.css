@@ -27,3 +27,24 @@
 .body__infoText > p {
   font-size: 14px;
 }
+.body__icons {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+.body__shuffle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  font-size: 80px;
+}
+.body__shuffle:hover {
+  transition: 100ms transform ease-in-out;
+  transform: scale(1.08);
+}
+.body__songs {
+  margin: 20px -30px;
+}
