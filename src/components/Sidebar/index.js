@@ -6,8 +6,7 @@ import { context } from '../../context/index';
 import './Sidebar.css';
 import SidebarOption from './SidebarOption';
 function Sidebar() {
-  const { setPlaylists, playlists } = useContext(context);
-  console.log('playlists', playlists);
+  const { playlists } = useContext(context);
   return (
     <div className='sidebar'>
       <img
@@ -22,8 +21,8 @@ function Sidebar() {
       <strong className='sidebar__title'>PLAYLISTS</strong>
       <hr />
       {playlists.items
-        ? playlists.items.map((playlist) => (
-            <SidebarOption title={playlist.name} />
+        ? playlists.items.map((playlist, i) => (
+            <SidebarOption key={i} title={playlist.name} />
           ))
         : null}
     </div>
