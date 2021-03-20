@@ -6,3 +6,23 @@
   z-index: 100;
   color: white;
 }
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+.songRow__info {
+  margin-left: 20px;
+}
+.songRow__info > p:first-child {
+  font-size: 16px;
+}
+.songRow__info > p:nth-child(2) {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+.songRow__albumImage {
+  height: 40px;
+  width: 40px;
+}

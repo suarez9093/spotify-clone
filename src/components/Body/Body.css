@@ -4,6 +4,10 @@
   padding: 30px;
   background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
   flex: 0.8;
+  overflow-y: overlay;
+}
+.body::-webkit-scrollbar {
+  display: none;
 }
 .body__info {
   display: flex;
@@ -39,10 +43,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 50px;
-  font-size: 80px;
+  /* font-size: 300px; */
+  transition: 100ms transform ease-in-out;
 }
 .body__shuffle:hover {
-  transition: 100ms transform ease-in-out;
   transform: scale(1.08);
 }
 .body__songs {
